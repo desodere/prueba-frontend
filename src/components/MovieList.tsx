@@ -1,5 +1,3 @@
-// src/components/MovieList.tsx
-
 import React from "react";
 import { Movie } from "../types";
 import { Link } from "react-router-dom";

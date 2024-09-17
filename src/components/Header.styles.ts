@@ -8,7 +8,7 @@ export const HeaderWrapper = styled.header`
   padding: 20px 40px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  font-size: 24px; /* Tamaño del texto del header */
+  font-size: 24px;
   font-weight: bold;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -44,11 +44,11 @@ export const Ul = styled.ul`
   display: flex;
   gap: 20px;
   padding: 0;
-  margin: 0; /* Asegura que no haya margen extra en la lista */
+  margin: 0;
 `;
 
 export const Li = styled.li`
-  font-size: inherit; /* Hereda el tamaño de fuente del header */
+  font-size: inherit;
 `;
 
 export const StyledLink = styled(Link)`
@@ -56,24 +56,24 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: inherit; /* Hereda el tamaño de fuente del header */
+  font-size: inherit;
   display: flex;
-  align-items: center; /* Alinea verticalmente el ícono y el texto */
+  align-items: center;
   transition: background 0.3s ease, transform 0.3s ease, font-size 0.3s ease;
 
   &:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: translateY(-3px);
-    font-size: 1.1em; /* Aumenta ligeramente el tamaño de la letra (110%) */
+    font-size: 1.1em;
   }
 
   svg {
-    margin-right: 8px; /* Espacio entre el ícono y el texto */
-    transition: transform 0.3s ease; /* Asegura que el ícono crezca junto con el texto */
+    margin-right: 8px;
+    transition: transform 0.3s ease;
   }
 
   &:hover svg {
-    transform: scale(1.1); /* Aumenta el tamaño del ícono al pasar el cursor */
+    transform: scale(1.1);
   }
 `;
 
@@ -82,7 +82,7 @@ export const SearchWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 500px; /* Ajusta el ancho máximo si es necesario */
+  max-width: 500px;
   margin-top: 20px;
 `;
 

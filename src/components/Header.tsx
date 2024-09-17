@@ -4,11 +4,11 @@ import React from "react";
 /*import { Link } from "react-router-dom";*/
 import { useFavoriteStore } from "../stores/favoriteStore";
 import { HeaderWrapper, Nav, Ul, Li, StyledLink } from "./Header.styles";
-import IconHomeSearchOutline from "../assets/icons/IconHomeSearchOutline"; // Ajusta la ruta si es necesario
-import IconHomeFavorite from "../assets/icons/IconHomeFavorite"; // Ajusta la ruta si es necesario
+import IconHomeSearchOutline from "../assets/icons/IconHomeSearchOutline";
+import IconHomeFavorite from "../assets/icons/IconHomeFavorite";
 
 const Header: React.FC = () => {
-  const { favorites } = useFavoriteStore(); // Obtén la lista de favoritos del store
+  const { favorites } = useFavoriteStore();
 
   return (
     <HeaderWrapper>

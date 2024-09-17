@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import * as Styles from "./Home.styles";
 import { useFavoriteStore } from "../stores/favoriteStore";
-import IconHeart from "../assets/icons/IconHeart"; // Ícono de favorito
-import IconHeartBreak from "../assets/icons/IconHeartBreak"; // Ícono de eliminar favorito
+import IconHeart from "../assets/icons/IconHeart";
+import IconHeartBreak from "../assets/icons/IconHeartBreak";
 
 const Home: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState("");

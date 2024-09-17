@@ -3,7 +3,7 @@ const API_KEY = import.meta.env.VITE_OMDB_API_KEY;
 if (!API_KEY) {
   throw new Error("API key is missing!");
 }
-const BASE_URL = "http://www.omdbapi.com/"; // URL base de la API
+const BASE_URL = "https://www.omdbapi.com/"; // URL base de la API
 
 // Función para buscar películas por título y página
 export const fetchMovies = async (searchTerm: string, page: number = 1) => {
@@ -16,7 +16,7 @@ export const fetchMovies = async (searchTerm: string, page: number = 1) => {
     if (data.Response === "True") {
       return data.Search; // Retorna el listado de películas
     } else {
-      throw new Error(data.Error); // Si no encuentra resultados, lanza un error
+      throw new Error(data.Error);
     }
   } catch (error) {
     console.error("Error fetching movies:", error);
@@ -34,12 +34,12 @@ export const fetchMovieDetails = async (movieId: string) => {
   try {
     const response = await fetch(`${BASE_URL}?i=${movieId}&apikey=${API_KEY}`);
     const data = await response.json();
-    console.log("Movie Details:", data); // Agrega esta línea para depuración
+    console.log("Movie Details:", data);
 
     if (data.Response === "True") {
-      return data; // Retorna los detalles de la película
+      return data;
     } else {
-      throw new Error(data.Error); // Si no encuentra la película, lanza un error
+      throw new Error(data.Error);
     }
   } catch (error) {
     console.error("Error fetching movie details:", error);

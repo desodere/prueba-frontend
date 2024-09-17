@@ -50,7 +50,7 @@ export const SearchWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 500px; /* Ajusta el ancho máximo si es necesario */
+  max-width: 500px;
   margin-top: 20px;
 `;
 
@@ -152,7 +152,7 @@ export const FavoriteButton = styled.button<{ $isFavorite: boolean }>`
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-top: 15px; /* Espacio entre la imagen y el botón */
+  margin-top: 15px;
   padding: 10px 20px;
   font-size: 14px;
   border-radius: 25px;
