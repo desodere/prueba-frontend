@@ -146,3 +146,8 @@ export const SearchButton = styled.button`
     flex-direction: column;
     padding: 10px;
 `;
+
+export const Title = styled.h1`
+  font-size: 24px;
+  margin-bottom: 16px;
+`;

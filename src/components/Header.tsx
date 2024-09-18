@@ -1,7 +1,5 @@
-// src/components/Header.tsx
-
 import React from "react";
-/*import { Link } from "react-router-dom";*/
+
 import { useFavoriteStore } from "../stores/favoriteStore";
 import { HeaderWrapper, Nav, Ul, Li, StyledLink } from "./Header.styles";
 import IconHomeSearchOutline from "../assets/icons/IconHomeSearchOutline";

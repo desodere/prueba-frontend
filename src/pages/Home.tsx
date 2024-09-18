@@ -45,9 +45,13 @@ const Home: React.FC = () => {
     try {
       const newPage = page + 1;
       const results = await fetchMovies(searchTerm, newPage);
-      setMovies((prevMovies) => [...prevMovies, ...results]);
-      setPage(newPage);
-      setHasMore(results.length > 0);
+      if (results.length === 0) {
+        setHasMore(false); // Si no hay más resultados, dejar de intentar cargar
+      } else {
+        setMovies((prevMovies) => [...prevMovies, ...results]);
+        setPage(newPage);
+        setHasMore(results.length > 0);
+      }
     } catch (error) {
       console.error("Error fetching more movies:", error);
     } finally {
@@ -133,6 +137,9 @@ const Home: React.FC = () => {
           </Styles.NoMoviesFound>
         )}
       </main>
+      <div>
+        <Styles.StyledScrollToTop smooth />
+      </div>
     </Styles.Container>
   );
 };

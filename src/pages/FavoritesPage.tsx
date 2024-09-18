@@ -25,6 +25,9 @@ const FavoritesPage: React.FC = () => {
           </Styles.MovieItem>
         ))
       )}
+      <div>
+        <Styles.StyledScrollToTop smooth />
+      </div>
     </Styles.Container>
   );
 };

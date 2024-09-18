@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { breakpoints } from "../styles/breakpoints";
+import ScrollToTop from "react-scroll-to-top";
 
 export const Container = styled.div`
   max-width: 1200px;
@@ -193,4 +194,35 @@ export const NoMoviesFound = styled.p`
   text-align: center;
   color: #888;
   margin-top: 50px;
+`;
+
+export const StyledScrollToTop = styled(ScrollToTop)`
+  background-color: #1e90ff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 8px 15px rgba(30, 144, 255, 0.3);
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: #187bcd;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(30, 144, 255, 0.5);
+  }
+
+  svg {
+    fill: #fff;
+    width: 26px;
+    height: 26px;
+    transition: fill 0.3s ease;
+  }
+
+  &:hover svg {
+    fill: #f1f1f1;
+  }
 `;

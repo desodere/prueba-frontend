@@ -1,4 +1,3 @@
-// omdbApi.ts
 const API_KEY = import.meta.env.VITE_OMDB_API_KEY;
 if (!API_KEY) {
   throw new Error("API key is missing!");
@@ -14,7 +13,7 @@ export const fetchMovies = async (searchTerm: string, page: number = 1) => {
     const data = await response.json();
 
     if (data.Response === "True") {
-      return data.Search; // Retorna el listado de películas
+      return data.Search;
     } else {
       throw new Error(data.Error);
     }
