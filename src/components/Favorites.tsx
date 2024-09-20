@@ -2,7 +2,7 @@ import React from "react";
 import { useFavoriteStore } from "../stores/favoriteStore";
 import { Link } from "react-router-dom";
 import { Movie } from "../types";
-
+/* Prueba */
 const Favorites: React.FC = () => {
   const { favorites, removeFavorite } = useFavoriteStore();
 
@@ -12,7 +12,7 @@ const Favorites: React.FC = () => {
 
   return (
     <div>
-      <h1>Favorites</h1>
+      <h1>Favoritos</h1>
       <ul>
         {favorites.map((movie: Movie) => (
           <li key={movie.imdbID}>

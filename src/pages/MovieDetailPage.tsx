@@ -31,6 +31,9 @@ const MovieDetailPage: React.FC = () => {
           <Styles.Title>{movie.Title}</Styles.Title>
           <Styles.Poster src={movie.Poster} alt={movie.Title} />
           <Styles.Plot>{movie.Plot}</Styles.Plot>
+          <Styles.Plot>Genero: {movie.Genre}</Styles.Plot>
+          <Styles.Plot>Director: {movie.Director}</Styles.Plot>
+          <Styles.Plot>Actores: {movie.Actors}</Styles.Plot>
           <Styles.FavoriteButton
             $isFavorite={isFavorite || false}
             onClick={() =>

@@ -7,7 +7,7 @@ const FavoritesPage: React.FC = () => {
 
   return (
     <Styles.Container>
-      <Styles.Title>Favorites</Styles.Title>
+      <Styles.Title>Favoritos</Styles.Title>
       {favorites.length === 0 ? (
         <p>Aún no tienes películas favoritas.</p>
       ) : (

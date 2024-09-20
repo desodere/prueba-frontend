@@ -1,7 +1,7 @@
 import React from "react";
 import { Movie } from "../types";
 import { Link } from "react-router-dom";
-
+/* Prueba */
 interface MovieListProps {
   movies: Movie[];
 }
